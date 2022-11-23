@@ -10,12 +10,10 @@ Console.WriteLine("Введите первое число");
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int numberB = Convert.ToInt32(Console.ReadLine());
+int max = numberA;
 
-if (numberA > numberB)
-{
-    Console.WriteLine($"Первое число {numberA} больше");
+if (numberB > max)   
+{   
+    max = numberB;
 }
-else
-{
-    Console.WriteLine($"Второе число {numberB} больше");
-}
+Console.WriteLine($"Число {max} больше");
